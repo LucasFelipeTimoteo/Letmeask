@@ -22,9 +22,6 @@ export const AdminRoom = () => {
   const params = useParams<RoomParams>()
   const roomId = params.id
 
-  // const { user } = useAuth()
-  // const [newQuestion, setNewQuestion] = useState('')
-
   const { questions, title } = useRoom(roomId)
 
   async function handleDeleteQuestion(questionId: string) {
